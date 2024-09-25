@@ -1,0 +1,17 @@
+B:\GitHub\ThreeDBsPrOne\bin\Debug\ThreeDbsPrOne.exe.config
+B:\GitHub\ThreeDBsPrOne\bin\Debug\ThreeDbsPrOne.exe
+B:\GitHub\ThreeDBsPrOne\bin\Debug\ThreeDbsPrOne.pdb
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.csproj.AssemblyReference.cache
+B:\GitHub\ThreeDBsPrOne\obj\Debug\MainWindow.g.cs
+B:\GitHub\ThreeDBsPrOne\obj\Debug\App.g.cs
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne_MarkupCompile.cache
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne_MarkupCompile.lref
+B:\GitHub\ThreeDBsPrOne\obj\Debug\MainWindow.baml
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.g.resources
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.Properties.Resources.resources
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.csproj.GenerateResource.cache
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.csproj.CoreCompileInputs.cache
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.exe
+B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.pdb
+B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\RemoveResume.g.cs
+B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\RemoveResume.baml

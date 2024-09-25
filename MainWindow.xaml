@@ -1,0 +1,45 @@
+﻿<Window x:Class="ThreeDbsPrOne.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThreeDbsPrOne"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600" Background="LightGray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Name ="MainLBGrid" Height="100"/>
+            <RowDefinition Name="ButtonsGridPart"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row ="0" Name ="MenuLB"  Margin="0 20 0 0 " FontSize="36"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Content="Меню"/>
+
+        <StackPanel Grid.Row="1">
+            <Button Name ="FirstCommand"  Height="60" Width="400" Margin="10" 
+                    Background="#BFBFBF" HorizontalAlignment="Center"
+                    Content="Видалити резюме" Opacity="1" FontSize="16"
+                    Click="FirstQueue_Click"/>
+
+            <Button Name ="SecondCommand" Height="60" Width="400" Margin="10" 
+                    Background="#BFBFBF" HorizontalAlignment="Center"
+                    Content="Видалити всі хобі в обраному резюме" Opacity="1" FontSize="16"
+                    Click="SecondCommand_Click"/>
+            
+            <Button x:Name="ThirdCommand" Height="60" Width="400" Margin="10" 
+                    Background="#BFBFBF" HorizontalAlignment="Center"
+                    Content="Видалити всі міста в обраному резюме" Opacity="1" FontSize="16"
+                    Click="ThirdCommand_Click"/>
+            
+            <Button Name ="FourtCommand"  Height="60" Width="400" Margin="10" 
+                    Background="#BFBFBF" HorizontalAlignment="Center"
+                    Content="Видалити всі хобі здобувачів, що мешкають в обраному місті" Opacity="1" FontSize="14"
+                    Click="FourtCommand_Click"/>
+            
+            <Button Name ="FifthCommand"  Height="60" Width="400" Margin="10" 
+                    Background="#BFBFBF" HorizontalAlignment="Center"
+                    Content="Видалити всіх здобувачів, що працювали в одному закладі" Opacity="1" FontSize="14"
+                    Click="FifthCommand_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
