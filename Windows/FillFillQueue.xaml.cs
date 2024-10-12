@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,63 +12,72 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ThreeDbsPrOne.DBs;
+using ThreeDbsPrOne.Models.Enums;
+using ThreeDbsPrOne.Models;
 
 
 using ThreeDbsPrOne.DBs;
 using ThreeDbsPrOne.Models;
 using ThreeDbsPrOne.Models.Enums;
 
+
 namespace ThreeDbsPrOne.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для RemoveResume.xaml
+    /// Логика взаимодействия для FillFillQueue.xaml
     /// </summary>
-    public partial class RemoveResume : Window
+    public partial class FillFillQueue : Window
     {
         private MainClass _main;
         private TaskType _type;
-        public RemoveResume(MainClass main, TaskType type)
+
+        public FillFillQueue()
+        {
+            InitializeComponent();
+        }
+        public FillFillQueue(MainClass main, TaskType type)
         {
             InitializeComponent();
 
-            _main = main;
             _type = type;
+            _main = main;
 
-            FillResumes();
             FillLBs();
+            FillResumes();
         }
         private void FillLBs()
         {
             switch (_type)
             {
-                case TaskType.RemoveResume:
+                case TaskType.ShowResume:
                     {
                         TaskCommand.Content = "Перший Запит";
-                        TaskBut.Content = "Видалити";
+                        TaskBut.Content = "Показати";
                         break;
                     }
-                case TaskType.RemoveHobbies:
+                case TaskType.ShowHobbies:
                     {
                         TaskCommand.Content = "Другий Запит";
-                        TaskBut.Content = "Видалити хобі";
+                        TaskBut.Content = "Показати хобі";
                         break;
                     }
-                case TaskType.RemovePlaces:
+                case TaskType.ShowPlaces:
                     {
                         TaskCommand.Content = "Третій Запит";
-                        TaskBut.Content = "Видалити місця";
+                        TaskBut.Content = "Показати місця";
                         break;
                     }
-                case TaskType.RemoveHobbieByCity:
+                case TaskType.ShowHobbieByCity:
                     {
                         TaskCommand.Content = "Четвертий Запит";
-                        TaskBut.Content = "Видалити хобі";
+                        TaskBut.Content = "Показати хобі";
                         break;
                     }
-                case TaskType.RemoveUserWithOneWorkPlace:
+                case TaskType.ShowUserWithOneWorkPlace:
                     {
                         TaskCommand.Content = "П'ятий Запит";
-                        TaskBut.Content = "Видалити юзерів";
+                        TaskBut.Content = "Показати юзерів";
                         break;
                     }
                 default:
@@ -79,7 +88,7 @@ namespace ThreeDbsPrOne.Windows
         }
         private void FillResumes()
         {
-            if(_type == TaskType.RemoveHobbieByCity)
+            if (_type == TaskType.ShowHobbieByCity)
             {
                 for (int i = (int)City.Paris; i <= (int)City.Toronto; i++)
                 {
@@ -89,7 +98,6 @@ namespace ThreeDbsPrOne.Windows
                 }
                 return;
             }
-
             for (int i = 0; i < _main.Resumes.Count; i++)
             {
                 Label lb = new Label();
@@ -103,39 +111,49 @@ namespace ThreeDbsPrOne.Windows
             Resume resume = null;
             City city = City.Toronto;
 
-            if (_type == TaskType.RemoveHobbieByCity)
+            if (_type == TaskType.ShowHobbieByCity)
             {
                 city = _main.GetSityByString(((Label)Resumes.SelectedItem).Content.ToString());
             }
-            else resume = _main.Resumes[Resumes.SelectedIndex];          
+            else resume = _main.Resumes[Resumes.SelectedIndex];
+            if (_type == TaskType.ShowResume)
+            {
+                Resume res = SsmsUsage.GetResumeById(resume.Id);
+                ShowInfo show = new ShowInfo(res, _type);
+                show.ShowDialog();
+                //Resumes.Items.RemoveAt(Resumes.SelectedIndex);
+            }
+            else if (_type == TaskType.ShowHobbies)
+            {
+                //SsmsUsage.RemoveHobbiesByResumeId(resume.Id);
 
-            if (_type == TaskType.RemoveResume)
-            {
-                SsmsUsage.RemoveResume(resume.Id);
-                Resumes.Items.RemoveAt(Resumes.SelectedIndex);
+                string res = SsmsUsage.GetHobbiesResumeById(resume.Id);
+                ShowInfo show = new ShowInfo(res);
+                show.ShowDialog();
             }
-            else if (_type == TaskType.RemoveHobbies)
+            else if (_type == TaskType.ShowPlaces)
             {
-                SsmsUsage.RemoveHobbiesByResumeId(resume.Id);
+                //SsmsUsage.RemovePlacesByResumeId(resume.Id);
+
+                string cities = SsmsUsage.GetCitiesResumeById(resume.Id);
+                ShowInfo show = new ShowInfo(cities);
+                show.ShowDialog();
+
             }
-            else if (_type == TaskType.RemovePlaces)
+            else if (_type == TaskType.ShowHobbieByCity)
             {
-                SsmsUsage.RemovePlacesByResumeId(resume.Id);
+                //SsmsUsage.RemoveHobbiesWithChosenCity(city);
+
+                string hobbies = SsmsUsage.GetHobbieStringWithChosenCity(city);
+                ShowInfo show = new ShowInfo(hobbies);
+                show.ShowDialog();
             }
-            else if (_type == TaskType.RemoveHobbieByCity)
-            {
-                SsmsUsage.RemoveHobbiesWithChosenCity(city);
-            }
-            else if(_type == TaskType.RemoveUserWithOneWorkPlace)
+            else if (_type == TaskType.ShowUserWithOneWorkPlace)
             {
 
             }
-            MessageBox.Show("Done!");
+            //MessageBox.Show("Done!");
         }
-        
-
-
-
 
     }
 }

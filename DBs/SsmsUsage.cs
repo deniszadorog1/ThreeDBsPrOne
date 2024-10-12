@@ -70,7 +70,6 @@ namespace ThreeDbsPrOne.DBs
                         if (colName == "Id") newResume.Id = (int)reader[i];
                         else if (colName == "UserId") newResume.UserId = (int)reader[i];
                         else newResume[colName] = reader[i];
-
                     }
                     //set other params for resume
 
@@ -231,17 +230,28 @@ namespace ThreeDbsPrOne.DBs
 
         public static void RemoveResume(int resumeId)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
-                RemoveFromCityResumeByResumeId(resumeId);
-                RemoveFromInstitutionResumeByResumeId(resumeId);
-                RemoveFromHobbieResumeByResumeId(resumeId);
+            GetResumeById(resumeId);
 
-                RemoveResumeById(resumeId);
-                connection.Close();
-            }
+
+            //Remove resume
+            /*            using (SqlConnection connection = new SqlConnection(_connectionString))
+                        {
+                            connection.Open();
+                            RemoveFromCityResumeByResumeId(resumeId);
+                            RemoveFromInstitutionResumeByResumeId(resumeId);
+                            RemoveFromHobbieResumeByResumeId(resumeId);
+
+                            RemoveResumeById(resumeId);
+                            connection.Close();
+                        }*/
         }
+        public static Resume GetResumeById(int resumeId)
+        {
+            List<Resume> resume = GetResumes();
+
+            return resume.Where(x => x.Id == resumeId).First();
+        }
+
         private static void RemoveResumeById(int resumeId)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -298,6 +308,76 @@ namespace ThreeDbsPrOne.DBs
         {
             RemoveFromHobbieResumeByResumeId(resumeId);
         }
+        public static string GetHobbiesResumeById(int resumeId)
+        {
+            string res = "";
+
+            List<Hobbie> hobbies = GetHobbiesByResumeId(resumeId);
+            res += "Hobbies: \n";
+            for (int i = 0; i < hobbies.Count; i++)
+            {
+                res += hobbies[i].ToString() + "\n";
+            }
+
+            return res;
+        }
+        private static List<Hobbie> GetHobbiesByResumeId(int resumeId)
+        {
+            List<Hobbie> res = new List<Hobbie>();
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT [HobbieId] FROM [HobbieResume] WHERE [ResumeId] = @id";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", resumeId);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    res.Add((Hobbie)id);
+                }
+                connection.Close();
+            }
+
+            return res;
+        }
+        public static string GetCitiesResumeById(int resumeId)
+        {
+            string res = "";
+            List<City> cities = GetCitiesByResumeId(resumeId);
+            res += "Cities: \n";
+            for (int i = 0; i < cities.Count; i++)
+            {
+                res += cities[i].ToString() + "\n";
+            }
+            return res;
+        }
+        private static List<City> GetCitiesByResumeId(int resumeId)
+        {
+            List<City> res = new List<City>();
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                string query = "SELECT [CityId] FROM [CityResume] WHERE [ResumeId] = @id";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", resumeId);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    res.Add((City)id);
+                }
+                connection.Close();
+            }
+            return res;
+        }
+
         public static void RemovePlacesByResumeId(int resumeId)
         {
             RemoveFromCityResumeByResumeId(resumeId);
@@ -311,10 +391,33 @@ namespace ThreeDbsPrOne.DBs
             List<int> resumeIds = GetResumesIdsWithGivenCityId(cityNumber);
 
             //Remove hobbies in that resumes
-            for(int i = 0; i < resumeIds.Count; i++)
+            for (int i = 0; i < resumeIds.Count; i++)
             {
                 RemoveFromHobbieResumeByResumeId(resumeIds[i]);
             }
+        }
+        public static string GetHobbieStringWithChosenCity(City city)
+        {
+            string res = "";
+
+            //Convert city in number
+            int cityNumber = (int)city;
+
+            //get resumes(their numbers) with such number
+            List<int> resumeIds = GetResumesIdsWithGivenCityId(cityNumber);
+
+            //Remove hobbies in that resumes
+            for (int i = 0; i < resumeIds.Count; i++)
+            {
+                List<Hobbie> hobbies = GetHobbiesByResumeId(resumeIds[i]);
+                res += $"\nResume Index - {resumeIds[i].ToString()}\n";
+
+                for (int j = 0; j < hobbies.Count; j++)
+                {
+                    res += $"{((Hobbie)hobbies[j])} ";
+                }
+            }
+            return res;
         }
         private static List<int> GetResumesIdsWithGivenCityId(int cityId)
         {
@@ -332,7 +435,7 @@ namespace ThreeDbsPrOne.DBs
 
                 while (reader.Read())
                 {
-                    int id = reader.GetInt32(0); 
+                    int id = reader.GetInt32(0);
                     if (!res.Contains(id))
                     {
                         res.Add(id);
@@ -344,12 +447,12 @@ namespace ThreeDbsPrOne.DBs
         }
 
         public static void RemoveUsersWitchWorkInOnePlace(List<int> userIds, List<int> resumeIds)
-        {   
-            for(int i = 0; i < resumeIds.Count; i++)
+        {
+            for (int i = 0; i < resumeIds.Count; i++)
             {
                 RemoveResume(resumeIds[i]);
             }
-            for(int i = 0; i < userIds.Count; i++)
+            for (int i = 0; i < userIds.Count; i++)
             {
                 RemoveUserById(userIds[i]);
             }
@@ -368,5 +471,43 @@ namespace ThreeDbsPrOne.DBs
                 connection.Close();
             }
         }
+        public static string GetFifthTaskString()
+        {
+            string res = "";
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT u.Id, u.Login, u.Password " +
+                    "FROM [User] u " +
+                    "INNER JOIN [Resume] r ON u.Id = r.UserId " +
+                    "INNER JOIN [InstitutionResume] ir ON r.Id = ir.ResumeId " +
+                    "GROUP BY u.Id, u.Login, u.Password " +
+                    "HAVING COUNT(ir.InstitutionId) != 1;";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        string colName = reader.GetName(i);
+
+                        if (colName == "Id")
+                        {
+                            res += $"User id: {reader[i].ToString()} \n";
+                        }
+                        else if (colName == "Name")
+                        {
+                            res += $"User name: {reader[i].ToString()} \n";
+                        }
+                    }
+                    res += "\n";
+                }
+                connection.Close();
+            }
+            return res;
+        }
+
     }
 }

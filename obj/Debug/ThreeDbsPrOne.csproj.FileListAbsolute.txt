@@ -13,5 +13,7 @@ B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.csproj.GenerateResource.cache
 B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.csproj.CoreCompileInputs.cache
 B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.exe
 B:\GitHub\ThreeDBsPrOne\obj\Debug\ThreeDbsPrOne.pdb
-B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\RemoveResume.g.cs
-B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\RemoveResume.baml
+B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\FillFillQueue.g.cs
+B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\FillFillQueue.baml
+B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\ShowInfo.g.cs
+B:\GitHub\ThreeDBsPrOne\obj\Debug\Windows\ShowInfo.baml

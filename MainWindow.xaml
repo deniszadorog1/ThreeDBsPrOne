@@ -17,27 +17,27 @@
         <StackPanel Grid.Row="1">
             <Button Name ="FirstCommand"  Height="60" Width="400" Margin="10" 
                     Background="#BFBFBF" HorizontalAlignment="Center"
-                    Content="Видалити резюме" Opacity="1" FontSize="16"
+                    Content="Показати резюме" Opacity="1" FontSize="16"
                     Click="FirstQueue_Click"/>
 
             <Button Name ="SecondCommand" Height="60" Width="400" Margin="10" 
                     Background="#BFBFBF" HorizontalAlignment="Center"
-                    Content="Видалити всі хобі в обраному резюме" Opacity="1" FontSize="16"
+                    Content="Показати всі хобі в обраному резюме" Opacity="1" FontSize="16"
                     Click="SecondCommand_Click"/>
             
             <Button x:Name="ThirdCommand" Height="60" Width="400" Margin="10" 
                     Background="#BFBFBF" HorizontalAlignment="Center"
-                    Content="Видалити всі міста в обраному резюме" Opacity="1" FontSize="16"
+                    Content="Показати всі міста в обраному резюме" Opacity="1" FontSize="16"
                     Click="ThirdCommand_Click"/>
             
             <Button Name ="FourtCommand"  Height="60" Width="400" Margin="10" 
                     Background="#BFBFBF" HorizontalAlignment="Center"
-                    Content="Видалити всі хобі здобувачів, що мешкають в обраному місті" Opacity="1" FontSize="14"
+                    Content="Показати всі хобі здобувачів, що мешкають в обраному місті" Opacity="1" FontSize="14"
                     Click="FourtCommand_Click"/>
             
             <Button Name ="FifthCommand"  Height="60" Width="400" Margin="10" 
                     Background="#BFBFBF" HorizontalAlignment="Center"
-                    Content="Видалити всіх здобувачів, що працювали в одному закладі" Opacity="1" FontSize="14"
+                    Content="Показати всіх здобувачів, що працювали в одному закладі" Opacity="1" FontSize="14"
                     Click="FifthCommand_Click"/>
         </StackPanel>
 

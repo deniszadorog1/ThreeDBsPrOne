@@ -56,8 +56,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Enums\TaskType.cs" />
-    <Compile Include="Windows\RemoveResume.xaml.cs">
-      <DependentUpon>RemoveResume.xaml</DependentUpon>
+    <Compile Include="Windows\FillFillQueue.xaml.cs">
+      <DependentUpon>FillFillQueue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowInfo.xaml.cs">
+      <DependentUpon>ShowInfo.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -72,7 +75,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\RemoveResume.xaml">
+    <Page Include="Windows\FillFillQueue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ShowInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

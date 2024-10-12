@@ -30,38 +30,38 @@ namespace ThreeDbsPrOne
 
             _main = new MainClass();
         }
-
         private void FirstQueue_Click(object sender, RoutedEventArgs e)
         {
-            RemoveResume first = new RemoveResume(_main, TaskType.RemoveResume);
+            FillFillQueue first = new FillFillQueue(_main, TaskType.ShowResume);
             first.ShowDialog();
         }
-
         private void SecondCommand_Click(object sender, RoutedEventArgs e)
         {
-            RemoveResume second = new RemoveResume(_main, TaskType.RemoveHobbies);
+            FillFillQueue second = new FillFillQueue(_main, TaskType.ShowHobbies);
             second.ShowDialog();
         }
-
         private void ThirdCommand_Click(object sender, RoutedEventArgs e)
         {
-            RemoveResume third = new RemoveResume(_main, TaskType.RemovePlaces);
+            FillFillQueue third = new FillFillQueue(_main, TaskType.ShowPlaces);
             third.ShowDialog();
         }
-
         private void FourtCommand_Click(object sender, RoutedEventArgs e)
         {
-            RemoveResume forth = new RemoveResume(_main, TaskType.RemoveHobbieByCity);
+            FillFillQueue forth = new FillFillQueue(_main, TaskType.ShowHobbieByCity);
             forth.ShowDialog();
         }
 
         private void FifthCommand_Click(object sender, RoutedEventArgs e)
         {
-            (List<int> userIds, List<int> resumesIds) = _main.GetUserAndResumeIdsToDelete();
+            /*            (List<int> userIds, List<int> resumesIds) = _main.GetUserAndResumeIdsToDelete();
+                        SsmsUsage.RemoveUsersWitchWorkInOnePlace(userIds, resumesIds);
+            */
 
-            SsmsUsage.RemoveUsersWitchWorkInOnePlace(userIds, resumesIds);
+            string res = SsmsUsage.GetFifthTaskString();
 
-            MessageBox.Show("Done!");
+            ShowInfo info = new ShowInfo(res);
+            info.ShowDialog();
+
         }
     }
 }

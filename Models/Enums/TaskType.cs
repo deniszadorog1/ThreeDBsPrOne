@@ -8,10 +8,10 @@ namespace ThreeDbsPrOne.Models.Enums
 {
     public enum TaskType
     {
-        RemoveResume,
-        RemoveHobbies, 
-        RemovePlaces, 
-        RemoveHobbieByCity, 
-        RemoveUserWithOneWorkPlace
+        ShowResume,
+        ShowHobbies, 
+        ShowPlaces, 
+        ShowHobbieByCity, 
+        ShowUserWithOneWorkPlace
     }
 }
