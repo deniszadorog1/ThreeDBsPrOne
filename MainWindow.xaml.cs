@@ -27,9 +27,9 @@ namespace ThreeDbsPrOne
         public MainWindow()
         {
             InitializeComponent();
-
             _main = new MainClass();
         }
+
         private void FirstQueue_Click(object sender, RoutedEventArgs e)
         {
             FillFillQueue first = new FillFillQueue(_main, TaskType.ShowResume);

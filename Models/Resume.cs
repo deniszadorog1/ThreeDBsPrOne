@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -10,19 +12,36 @@ namespace ThreeDbsPrOne.Models
 {
     public class Resume
     {
-        public int Id { get; set; }
+        [BsonId]
+        [BsonElement("id")]
+        public string Id { get; set; } 
+
+        [BsonElement("userId")]
         public int UserId { get; set; }
+
+        [BsonElement("name")]
         public string Name { get; set; }
+
+        [BsonElement("surname")]
         public string Surname { get; set; }
+
+        [BsonElement("livingPlace")]
         public string LivingPlace { get; set; }
+
+        [BsonElement("hobbies")]
         public List<Hobbie> Hobbies { get; set; }
+
+        [BsonElement("institutions")]
         public List<Institution> Institutions { get; set; }
+
+        [BsonElement("cities")]
         public List<City> Cities { get; set; }
+
 
 
         public Resume()
         {
-            Id = -1;
+            Id = "-1";
             UserId = -1;
             Name = "";
             Surname = "";

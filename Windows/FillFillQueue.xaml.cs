@@ -31,10 +31,12 @@ namespace ThreeDbsPrOne.Windows
     {
         private MainClass _main;
         private TaskType _type;
+        private GraphDB _db;
 
         public FillFillQueue()
         {
             InitializeComponent();
+            InitGrpahDb();
         }
         public FillFillQueue(MainClass main, TaskType type)
         {
@@ -45,6 +47,19 @@ namespace ThreeDbsPrOne.Windows
 
             FillLBs();
             FillResumes();
+            InitGrpahDb();
+        }
+        public void InitGrpahDb()
+        {
+            _db = new GraphDB("neo4j://localhost:7687", "neo4j", "qwertyui");
+        }
+        public async void GrphicDb(GraphDB db)
+        {
+            await db.PrintGreetingAsync("hey q");
+        }
+        public async void AddRes(Resume res)
+        {
+            await _db.AddResumeAsync(res);
         }
         private void FillLBs()
         {
@@ -119,6 +134,10 @@ namespace ThreeDbsPrOne.Windows
             if (_type == TaskType.ShowResume)
             {
                 Resume res = SsmsUsage.GetResumeById(resume.Id);
+
+                DocumentDB.AddResume(res);
+                AddRes(res);
+
                 ShowInfo show = new ShowInfo(res, _type);
                 show.ShowDialog();
                 //Resumes.Items.RemoveAt(Resumes.SelectedIndex);

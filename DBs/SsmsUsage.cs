@@ -67,7 +67,7 @@ namespace ThreeDbsPrOne.DBs
                     {
                         string colName = reader.GetName(i);
 
-                        if (colName == "Id") newResume.Id = (int)reader[i];
+                        if (colName == "Id") newResume.Id = reader[i].ToString();
                         else if (colName == "UserId") newResume.UserId = (int)reader[i];
                         else newResume[colName] = reader[i];
                     }
@@ -84,7 +84,7 @@ namespace ThreeDbsPrOne.DBs
             return resumes;
         }
 
-        private static List<Institution> GetInstitutionForResume(int resumeId)
+        private static List<Institution> GetInstitutionForResume(string resumeId)
         {
             List<Institution> institutions = new List<Institution>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -109,7 +109,7 @@ namespace ThreeDbsPrOne.DBs
                             if (!(institutions is null)) institutions.Add((Institution)insRes);
                             check = !check;
                         }
-                        if (colName == "ResumeId" && (int)reader[i] == resumeId)
+                        if (colName == "ResumeId" && reader[i].ToString() == resumeId)
                         {
                             check = true;
                         }
@@ -131,7 +131,7 @@ namespace ThreeDbsPrOne.DBs
             return null;
         }
 
-        private static List<City> GetCityForResume(int resumeId)
+        private static List<City> GetCityForResume(string resumeId)
         {
             List<City> cities = new List<City>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -157,7 +157,7 @@ namespace ThreeDbsPrOne.DBs
                             if (!(cities is null)) cities.Add((City)cityRes);
                             check = !check;
                         }
-                        if (colName == "ResumeId" && (int)reader[i] == resumeId)
+                        if (colName == "ResumeId" && reader[i].ToString() == resumeId)
                         {
                             check = true;
                         }
@@ -180,7 +180,7 @@ namespace ThreeDbsPrOne.DBs
         }
 
 
-        private static List<Hobbie> GetHobbieForResume(int resumeId)
+        private static List<Hobbie> GetHobbieForResume(string resumeId)
         {
             List<Hobbie> hobbies = new List<Hobbie>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -206,7 +206,7 @@ namespace ThreeDbsPrOne.DBs
                             if (!(hobbies is null)) hobbies.Add((Hobbie)hobRes);
                             check = !check;
                         }
-                        if (colName == "ResumeId" && (int)reader[i] == resumeId)
+                        if (colName == "ResumeId" && reader[i].ToString() == resumeId)
                         {
                             check = true;
                         }
@@ -228,7 +228,7 @@ namespace ThreeDbsPrOne.DBs
             return null;
         }
 
-        public static void RemoveResume(int resumeId)
+        public static void RemoveResume(string resumeId)
         {
             GetResumeById(resumeId);
 
@@ -245,7 +245,7 @@ namespace ThreeDbsPrOne.DBs
                             connection.Close();
                         }*/
         }
-        public static Resume GetResumeById(int resumeId)
+        public static Resume GetResumeById(string resumeId)
         {
             List<Resume> resume = GetResumes();
 
@@ -291,7 +291,7 @@ namespace ThreeDbsPrOne.DBs
                 connection.Close();
             }
         }
-        private static void RemoveFromHobbieResumeByResumeId(int resumeId)
+        private static void RemoveFromHobbieResumeByResumeId(string resumeId)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
@@ -304,11 +304,11 @@ namespace ThreeDbsPrOne.DBs
                 connection.Close();
             }
         }
-        public static void RemoveHobbiesByResumeId(int resumeId)
+        public static void RemoveHobbiesByResumeId(string resumeId)
         {
             RemoveFromHobbieResumeByResumeId(resumeId);
         }
-        public static string GetHobbiesResumeById(int resumeId)
+        public static string GetHobbiesResumeById(string resumeId)
         {
             string res = "";
 
@@ -321,7 +321,7 @@ namespace ThreeDbsPrOne.DBs
 
             return res;
         }
-        private static List<Hobbie> GetHobbiesByResumeId(int resumeId)
+        private static List<Hobbie> GetHobbiesByResumeId(string resumeId)
         {
             List<Hobbie> res = new List<Hobbie>();
 
@@ -345,7 +345,7 @@ namespace ThreeDbsPrOne.DBs
 
             return res;
         }
-        public static string GetCitiesResumeById(int resumeId)
+        public static string GetCitiesResumeById(string resumeId)
         {
             string res = "";
             List<City> cities = GetCitiesByResumeId(resumeId);
@@ -356,7 +356,7 @@ namespace ThreeDbsPrOne.DBs
             }
             return res;
         }
-        private static List<City> GetCitiesByResumeId(int resumeId)
+        private static List<City> GetCitiesByResumeId(string resumeId)
         {
             List<City> res = new List<City>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -388,7 +388,7 @@ namespace ThreeDbsPrOne.DBs
             int cityNumber = (int)city;
 
             //get resumes(their numbers) with such number
-            List<int> resumeIds = GetResumesIdsWithGivenCityId(cityNumber);
+            List<string> resumeIds = GetResumesIdsWithGivenCityId(cityNumber.ToString());
 
             //Remove hobbies in that resumes
             for (int i = 0; i < resumeIds.Count; i++)
@@ -404,7 +404,7 @@ namespace ThreeDbsPrOne.DBs
             int cityNumber = (int)city;
 
             //get resumes(their numbers) with such number
-            List<int> resumeIds = GetResumesIdsWithGivenCityId(cityNumber);
+            List<string> resumeIds = GetResumesIdsWithGivenCityId(cityNumber.ToString());
 
             //Remove hobbies in that resumes
             for (int i = 0; i < resumeIds.Count; i++)
@@ -419,9 +419,9 @@ namespace ThreeDbsPrOne.DBs
             }
             return res;
         }
-        private static List<int> GetResumesIdsWithGivenCityId(int cityId)
+        private static List<string> GetResumesIdsWithGivenCityId(string cityId)
         {
-            List<int> res = new List<int>();
+            List<string> res = new List<string>();
 
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
@@ -436,9 +436,9 @@ namespace ThreeDbsPrOne.DBs
                 while (reader.Read())
                 {
                     int id = reader.GetInt32(0);
-                    if (!res.Contains(id))
+                    if (!res.Contains(id.ToString()))
                     {
-                        res.Add(id);
+                        res.Add(id.ToString());
                     }
                 }
                 connection.Close();
@@ -450,7 +450,7 @@ namespace ThreeDbsPrOne.DBs
         {
             for (int i = 0; i < resumeIds.Count; i++)
             {
-                RemoveResume(resumeIds[i]);
+                RemoveResume(resumeIds[i].ToString());
             }
             for (int i = 0; i < userIds.Count; i++)
             {

@@ -56,7 +56,7 @@ namespace ThreeDbsPrOne.Models
             {
                 if (userIds.Contains(Resumes[i].UserId))
                 {
-                    res.Add(Resumes[i].Id);
+                    res.Add(int.Parse(Resumes[i].Id));
                 }
             }
             return res;

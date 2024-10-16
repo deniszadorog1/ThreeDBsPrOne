@@ -3,48 +3,56 @@
   "WorkspaceRootPath": "B:\\GitHub\\ThreeDBsPrOne\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\windows\\fillfillqueue.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\fillfillqueue.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\dbs\\graphdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:dbs\\graphdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\dbs\\ssmsusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:dbs\\ssmsusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\dbs\\documentdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:dbs\\documentdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\windows\\fillfillqueue.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\fillfillqueue.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\windows\\showinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\showinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\windows\\fillfillqueue.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\fillfillqueue.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\models\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:models\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\windows\\showinfo.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\showinfo.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\windows\\showinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\windows\\showinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\showinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\windows\\fillfillqueue.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\fillfillqueue.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\windows\\showinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\showinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|b:\\github\\threedbsprone\\windows\\fillfillqueue.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:windows\\fillfillqueue.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|B:\\GitHub\\ThreeDBsPrOne\\models\\enums\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C952F177-7DBD-41E5-8887-64B38DE3BCF5}|ThreeDbsPrOne.csproj|solutionrelative:models\\enums\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,26 +70,103 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GraphDB.cs",
+              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\GraphDB.cs",
+              "RelativeDocumentMoniker": "DBs\\GraphDB.cs",
+              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\GraphDB.cs",
+              "RelativeToolTip": "DBs\\GraphDB.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAC8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:01:54.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T13:13:53.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DocumentDB.cs",
+              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\DocumentDB.cs",
+              "RelativeDocumentMoniker": "DBs\\DocumentDB.cs",
+              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\DocumentDB.cs",
+              "RelativeToolTip": "DBs\\DocumentDB.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T08:40:20.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SsmsUsage.cs",
+              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\SsmsUsage.cs",
+              "RelativeDocumentMoniker": "DBs\\SsmsUsage.cs",
+              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\SsmsUsage.cs",
+              "RelativeToolTip": "DBs\\SsmsUsage.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAAANoBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T11:25:38.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T08:13:09.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "City.cs",
+              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Models\\Enums\\City.cs",
+              "RelativeDocumentMoniker": "Models\\Enums\\City.cs",
+              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Models\\Enums\\City.cs",
+              "RelativeToolTip": "Models\\Enums\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T08:13:01.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAqwD8AAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAADwvzcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T22:37:40.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Resume.cs",
               "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Models\\Resume.cs",
               "RelativeDocumentMoniker": "Models\\Resume.cs",
               "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Models\\Resume.cs",
               "RelativeToolTip": "Models\\Resume.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T10:58:48.073Z",
               "EditorCaption": ""
@@ -89,32 +174,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SsmsUsage.cs",
-              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\SsmsUsage.cs",
-              "RelativeDocumentMoniker": "DBs\\SsmsUsage.cs",
-              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\DBs\\SsmsUsage.cs",
-              "RelativeToolTip": "DBs\\SsmsUsage.cs",
-              "ViewState": "AQIAABUBAAAAAAAAAAAAAOQBAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:25:38.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "FillFillQueue.xaml.cs",
               "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\FillFillQueue.xaml.cs",
               "RelativeDocumentMoniker": "Windows\\FillFillQueue.xaml.cs",
               "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\FillFillQueue.xaml.cs",
               "RelativeToolTip": "Windows\\FillFillQueue.xaml.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAawHMAAAAQAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAmwCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T10:23:17.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ShowInfo.xaml.cs",
               "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\ShowInfo.xaml.cs",
               "RelativeDocumentMoniker": "Windows\\ShowInfo.xaml.cs",
@@ -127,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "ShowInfo.xaml",
               "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\ShowInfo.xaml",
               "RelativeDocumentMoniker": "Windows\\ShowInfo.xaml",
@@ -151,75 +223,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "MainClass.cs",
               "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Models\\MainClass.cs",
               "RelativeDocumentMoniker": "Models\\MainClass.cs",
               "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Models\\MainClass.cs",
               "RelativeToolTip": "Models\\MainClass.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwB0AAAAUAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAjwDcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T11:32:17.366Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "4b03abeb-44de-478e-832d-50c05ab4c067",
-        "Display": 0,
-        "X": 1485,
-        "Y": 159,
-        "Width": 800,
-        "Height": 600,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-25T08:08:14.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FillFillQueue.xaml",
-              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\FillFillQueue.xaml",
-              "RelativeDocumentMoniker": "Windows\\FillFillQueue.xaml",
-              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\FillFillQueue.xaml",
-              "RelativeToolTip": "Windows\\FillFillQueue.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-12T10:22:37.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ShowInfo.xaml",
-              "DocumentMoniker": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\ShowInfo.xaml",
-              "RelativeDocumentMoniker": "Windows\\ShowInfo.xaml",
-              "ToolTip": "B:\\GitHub\\ThreeDBsPrOne\\Windows\\ShowInfo.xaml",
-              "RelativeToolTip": "Windows\\ShowInfo.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-12T10:53:37.53Z",
               "EditorCaption": ""
             }
           ]

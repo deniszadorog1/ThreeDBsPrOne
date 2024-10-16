@@ -1,5 +1,10 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver;
+using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -9,13 +14,18 @@ namespace ThreeDbsPrOne.Models
 {
     public class User
     {
-        public int Id { get; set; }
+
+        [BsonId]
+        [BsonElement("id")]
+        public string Id { get; set; }
+        [BsonElement("login")]
         public string Login { get; set; }
+        [BsonElement("password")]
         public string Password { get; set; }
 
         public User()
         {
-            Id = -1;
+            Id = "-1";
             Login = "";
             Password = "";
         }
@@ -33,7 +43,7 @@ namespace ThreeDbsPrOne.Models
                     PropertyInfo propertInfo = typeof(User).GetProperty(name);
                     if (propertInfo != null && propertInfo.CanWrite)
                     {
-                        propertInfo.SetValue(this, value);
+                        propertInfo.SetValue(this, value.ToString());
                     }
                     return;
                 }
